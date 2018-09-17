@@ -1,13 +1,11 @@
 /**
- * This class represents a simple picture. You can draw the picture using
- * the draw method. But wait, there's more: being an electronic picture, it
- * can be changed. You can set it to black-and-white display and back to
- * colors (only after it's been drawn, of course).
- *
- * This class was written as an early example for teaching Java with BlueJ.
+ * This is a drawing of a person holding a sword and sheild, with a layer of 
+ * grass on the bottom. In order to create the sword tip, I used a person 
+ * object colored white and covered the top of the sword to give the 
+ * impression of a triangle.
  * 
- * @author  Michael Kšlling and David J. Barnes
- * @version 2016.02.29
+ * @author  Andrew Helgeson
+ * @version 2018.09.17
  */
 public class Picture
 {
@@ -285,12 +283,36 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        /**
-         * wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
-         */
+        grass.changeColor("grey");
+        person.changeColor("black");
+        hilt1.changeColor("grey");
+        hilt2.changeColor("grey");
+        hilt3.changeColor("grey");
+        hilt4.changeColor("grey");
+        hilt5.changeColor("grey");
+        sheildTop.changeColor("light grey");
+        sheildBottom.changeColor("light grey");
+        sheilddesign1.changeColor("white");
+        handle1.changeColor("dark grey");
+        handle2.changeColor("dark grey");
+        Lblade1.changeColor("grey");
+        Lblade2.changeColor("grey");
+        Lblade3.changeColor("grey");
+        Lblade4.changeColor("grey");
+        Lblade5.changeColor("grey");
+        Lblade6.changeColor("grey");
+        Lblade7.changeColor("grey");
+        Rblade1.changeColor("light grey");
+        Rblade2.changeColor("light grey");
+        Rblade3.changeColor("light grey");
+        Rblade4.changeColor("light grey");
+        Rblade5.changeColor("light grey");
+        Rblade6.changeColor("light grey");
+        Rblade7.changeColor("light grey");
+        LhiltTip.changeColor("grey");
+        RhiltTip.changeColor("grey");
+        gem.changeColor("white");
+        swordtip.changeColor("white");
     }
 
     /**
@@ -298,9 +320,35 @@ public class Picture
      */
     public void setColor()
     {
-        //wall.changeColor("red");
-        //window.changeColor("black");
-        //roof.changeColor("green");
-        //sun.changeColor("yellow");
+        grass.changeColor("green");
+        person.changeColor("black");
+        hilt1.changeColor("red");
+        hilt2.changeColor("red");
+        hilt3.changeColor("red");
+        hilt4.changeColor("red");
+        hilt5.changeColor("red");
+        sheildTop.changeColor("sky blue");
+        sheildBottom.changeColor("sky blue");
+        sheilddesign1.changeColor("white");
+        handle1.changeColor("dark grey");
+        handle2.changeColor("dark grey");
+        Lblade1.changeColor("grey");
+        Lblade2.changeColor("grey");
+        Lblade3.changeColor("grey");
+        Lblade4.changeColor("grey");
+        Lblade5.changeColor("grey");
+        Lblade6.changeColor("grey");
+        Lblade7.changeColor("grey");
+        Rblade1.changeColor("light grey");
+        Rblade2.changeColor("light grey");
+        Rblade3.changeColor("light grey");
+        Rblade4.changeColor("light grey");
+        Rblade5.changeColor("light grey");
+        Rblade6.changeColor("light grey");
+        Rblade7.changeColor("light grey");
+        LhiltTip.changeColor("red");
+        RhiltTip.changeColor("red");
+        gem.changeColor("blue");
+        swordtip.changeColor("white");
     }
 }
