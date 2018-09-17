@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.*;
 
 /**
+ * (2018.09.17 - added grey, light grey, dark grey, and sky blue to canvas
+ * colors)
  * Canvas is a class to allow for simple graphical drawing on a canvas.
  * This is a modification of the general purpose Canvas, specially made for
  * the BlueJ "shapes" example. 
