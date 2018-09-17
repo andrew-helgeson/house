@@ -16,6 +16,10 @@ public class Picture
     private Square hilt3;
     private Square hilt4;
     private Square hilt5;
+    private Square grass;
+    private Square sheildTop;
+    private Triangle sheilddesign1;
+    private Circle sheildBottom;
     private Square handle1;
     private Square handle2;
     private Square Lblade1;
@@ -49,6 +53,10 @@ public class Picture
         hilt3 = new Square();
         hilt4 = new Square();
         hilt5 = new Square();
+        grass = new Square();
+        sheildTop = new Square();
+        sheildBottom = new Circle();
+        sheilddesign1 = new Triangle();
         handle1 = new Square();
         handle2 = new Square();
         Lblade1 = new Square();
@@ -79,10 +87,34 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
+            grass.changeColor("green");
+            grass.moveHorizontal(-350);
+            grass.moveVertical(140);
+            grass.changeSize(550);
+            grass.makeVisible();
+            
             person.moveHorizontal(-70);
             person.moveVertical(-40);
             person.changeSize(200, 120);
             person.makeVisible();
+            
+            sheildTop.changeColor("sky blue");
+            sheildTop.moveHorizontal(-200);
+            sheildTop.moveVertical(40);
+            sheildTop.changeSize(80);
+            sheildTop.makeVisible();
+
+            sheildBottom.changeColor("sky blue");
+            sheildBottom.moveHorizontal(-121);
+            sheildBottom.moveVertical(100);
+            sheildBottom.changeSize(81);
+            sheildBottom.makeVisible();
+            
+            sheilddesign1.changeColor("white");
+            sheilddesign1.moveHorizontal(-60);
+            sheilddesign1.moveVertical(40);
+            sheilddesign1.changeSize(50, 50);
+            sheilddesign1.makeVisible();
             
             
             hilt1.changeColor("red");

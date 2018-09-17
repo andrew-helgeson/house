@@ -140,6 +140,9 @@ public class Canvas
         else if(colorString.equals("blue")) {
             graphic.setColor(new Color(30, 75, 220));
         }
+        else if(colorString.equals("sky blue")) {
+            graphic.setColor(new Color(0, 191, 255));
+        }
         else if(colorString.equals("yellow")) {
             graphic.setColor(new Color(255, 230, 0));
         }
