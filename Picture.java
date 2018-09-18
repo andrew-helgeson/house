@@ -37,7 +37,7 @@ public class Picture
     private Triangle LhiltTip;
     private Triangle RhiltTip;
     private Circle gem;
-    private Person person;
+    private Person stickfigure1;
     private Person swordtip;
     private boolean drawn;
 
@@ -74,7 +74,7 @@ public class Picture
         LhiltTip = new Triangle();
         RhiltTip = new Triangle();
         gem = new Circle();
-        person = new Person();
+        stickfigure1 = new Person();
         swordtip = new Person();
         drawn = false;
     }
@@ -91,10 +91,10 @@ public class Picture
             grass.changeSize(550);
             grass.makeVisible();
             
-            person.moveHorizontal(-70);
-            person.moveVertical(-40);
-            person.changeSize(200, 120);
-            person.makeVisible();
+            stickfigure1.moveHorizontal(-70);
+            stickfigure1.moveVertical(-40);
+            stickfigure1.changeSize(200, 120);
+            stickfigure1.makeVisible();
             
             sheildTop.changeColor("sky blue");
             sheildTop.moveHorizontal(-200);
@@ -264,15 +264,6 @@ public class Picture
             swordtip.moveVertical(-240);
             swordtip.changeSize(150, 90);
             swordtip.makeVisible();
-    
-    
-            /**
-             * sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
-             */
             
             drawn = true;
         }
@@ -284,7 +275,7 @@ public class Picture
     public void setBlackAndWhite()
     {
         grass.changeColor("grey");
-        person.changeColor("black");
+        stickfigure1.changeColor("black");
         hilt1.changeColor("grey");
         hilt2.changeColor("grey");
         hilt3.changeColor("grey");
@@ -321,7 +312,7 @@ public class Picture
     public void setColor()
     {
         grass.changeColor("green");
-        person.changeColor("black");
+        stickfigure1.changeColor("black");
         hilt1.changeColor("red");
         hilt2.changeColor("red");
         hilt3.changeColor("red");
